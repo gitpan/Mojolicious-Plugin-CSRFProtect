@@ -1,10 +1,10 @@
 {
-   "abstract" : "Mojolicious Plugin",
+   "abstract" : "fully protects you from CSRF attacks",
    "author" : [
       "Viktor Turskyi <koorchik@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.59, CPAN::Meta::Converter version 2.112150",
+   "generated_by" : "ExtUtils::MakeMaker version 6.59, CPAN::Meta::Converter version 2.112621",
    "license" : [
       "unknown"
    ],
@@ -37,5 +37,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.04"
+   "version" : "0.05"
 }
