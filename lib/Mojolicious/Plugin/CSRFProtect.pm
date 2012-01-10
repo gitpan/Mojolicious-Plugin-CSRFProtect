@@ -7,7 +7,7 @@ use Mojo::Base 'Mojolicious::Plugin';
 use Mojo::Util qw/md5_sum/;
 use Mojo::ByteStream qw/b/;
 
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 sub register {
     my ( $self, $app ) = @_;
@@ -101,7 +101,7 @@ __END__
 
 =head1 NAME
 
-Mojolicious::Plugin::CSRFProtect - fully protects you from CSRF attacks
+Mojolicious::Plugin::CSRFProtect - Fully protects you from CSRF attacks
 
 =head1 SYNOPSIS
 
