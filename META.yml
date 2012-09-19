@@ -19,4 +19,5 @@ no_index:
     - inc
 requires:
   Mojolicious: 1.90
-version: 0.10
+  perl: 5.01
+version: 0.11
