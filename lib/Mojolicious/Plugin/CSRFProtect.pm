@@ -7,7 +7,7 @@ use Mojo::Base 'Mojolicious::Plugin';
 use Mojo::Util qw/md5_sum/;
 use Mojo::ByteStream qw/b/;
 
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 sub register {
     my ( $self, $app, $conf ) = @_;
@@ -48,8 +48,8 @@ sub register {
         jquery_ajax_csrf_protection => sub {
             my $js = '<meta name="csrftoken" content="' . $self->_csrftoken( $_[0] ) . '"/>';
             $js .= q!<script type="text/javascript">!;
-            $js .= q! $(document).ajaxSend(function(e, xhr, options) { !;
-            $js .= q!    var token = $("meta[name='csrftoken']").attr("content");!;
+            $js .= q! jQuery(document).ajaxSend(function(e, xhr, options) { !;
+            $js .= q!    var token = jQuery("meta[name='csrftoken']").attr("content");!;
             $js .= q! xhr.setRequestHeader("X-CSRF-Token", token);!;
             $js .= q! });</script>!;
 
