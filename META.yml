@@ -18,6 +18,6 @@ no_index:
     - t
     - inc
 requires:
-  Mojolicious: 1.90
+  Mojolicious: 3.85
   perl: 5.01
-version: 0.12
+version: 0.13
