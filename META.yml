@@ -20,4 +20,4 @@ no_index:
 requires:
   Mojolicious: 3.85
   perl: 5.01
-version: 0.13
+version: 0.14
